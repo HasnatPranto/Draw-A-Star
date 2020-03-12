@@ -134,7 +134,7 @@ public class sampleController {
         x2=Integer.parseInt(textField_x2.getText());
         y2=Integer.parseInt(textField_y2.getText());
 
-        Lines line=new Lines(x1,x2,y1,y2);
+        ishape line=new Lines(x1,x2,y1,y2);
 
         group.getChildren().add(line.draw());
         display(group);
@@ -148,7 +148,7 @@ public class sampleController {
         b=Integer.parseInt(textField_b.getText());
         rad=Integer.parseInt(textField_rad.getText());
 
-        Circles circles=new Circles(a,b,rad);
+        ishape circles=new Circles(a,b,rad);
         group.getChildren().add(circles.draw());
         display(group);
     }

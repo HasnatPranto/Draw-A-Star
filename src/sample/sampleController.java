@@ -136,7 +136,7 @@ public class sampleController {
 
         ishape line=new Lines(x1,x2,y1,y2);
 
-        group.getChildren().add(line.draw());
+        group.getChildren().add((Node)line.draw());
         display(group);
     }
     public void drawCircle(){
@@ -149,7 +149,7 @@ public class sampleController {
         rad=Integer.parseInt(textField_rad.getText());
 
         ishape circles=new Circles(a,b,rad);
-        group.getChildren().add(circles.draw());
+        group.getChildren().add((Node)circles.draw());
         display(group);
     }
 
